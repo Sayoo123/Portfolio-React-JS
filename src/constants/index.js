@@ -31,13 +31,14 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "Works",
+      title: "Works",
     },
     {
       id: "contact",
       title: "Contact",
     },
+    
   ];
   
   const services = [

@@ -23,7 +23,6 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         scale={isMobile ? 1.0 : 1.9}
         position={isMobile ? [0, -2.5, -0.5] : [0,-1.5,-2.5]}
-
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -62,6 +61,7 @@ const AstroCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       //camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -69,9 +69,11 @@ const AstroCanvas = () => {
           // maxPolarAngle={Math.PI / 2}
           // minPolarAngle={Math.PI / 2}
           autoRotate
+        
         />
         <Computers isMobile={isMobile} />
       </Suspense>
+      
         <Preload all />
     </Canvas>
   );
