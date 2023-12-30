@@ -16,9 +16,10 @@ const Computers = ({ isMobile }) => {
         angle={0.12}
         penumbra={1}
         intensity={20000}
-        
+        castShadow
+        shadow-mapSize={1024}
       />
-      {/* <pointLight intensity={0.5} color="#fff" /> */}
+      <pointLight intensity={5} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 1.0 : 1.9}

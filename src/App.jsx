@@ -4,26 +4,25 @@ import {About,Contact,Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas} from './comp
 function App() {
 
   return (
-   <BrowserRouter>
-   <div className={`relative z-0 bg-color-hero`}>
-    <div className=''>
-     <Navbar/>
-      <Hero/>
-      <StarsCanvas/>
+    <BrowserRouter>
+    <div className={`relative z-0 bg-color bg-no-repeat`}>
+     <div className=''>
+      <Navbar/>
+       <Hero/>
+      </div>
+     <div>
+     <About/>
+     <Tech/>
+     <Works/>
+     <Feedbacks/>
+     </div>
+     <div className='relative z-0'>
+       <Contact/>
+      </div>
+     <StarsCanvas/>
     </div>
-    <div>
-    <About/>
-    <Tech/>
-    <Works/>
-    <Feedbacks/>
-    </div>
-    <div className='relative z-0'>
-      <Contact/>
-      <StarsCanvas/>
-    </div>
-   </div>
-   </BrowserRouter>
-  )
+    </BrowserRouter>
+   )
 }
 
 export default App

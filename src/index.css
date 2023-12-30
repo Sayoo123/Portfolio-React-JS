@@ -11,19 +11,15 @@
   scroll-behavior: smooth;
   
 }
-.bg-color-white{
-  box-shadow: 5px 5px 8px rgba(198, 197, 196, 0.5);
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+.bg-color{
+  background-color: #030014;
+  /* background-image: linear-gradient(to bottom, #f9683b, #f9683b, #f9683b, #f9683b, #f9683b, #fa723b, #fa7c3c, #fa863d, #f99a43, #f8ad4d, #f7c05b, #f5d16c); */
+  /* background-image: url("/src/assets/starsbg.jpeg");
+  background-size: cover; */
+  
 }
-.bg-color-hero{
-  background-color: #050816;}
 .bg-hero-pattern{
-  background-image: url('./assets/banner-bg.png');
+   background-color: #050816;
 } 
 .hash-span {
   margin-top: -100px;
@@ -42,6 +38,10 @@
   .sm-phone2{
     margin-top: 0;
     width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
   }
 }
 
@@ -70,11 +70,37 @@
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  box-shadow: 5px 5px 8px rgba(198, 197, 196, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  
 }
-
+.lightup{
+  position: relative;
+}
+.lightup::before {  
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.lightup:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.lightup::before{
+  position: absolute;
+  transition: transform 1s ease;
+  background: rgb(255,255,255);
+  background: linear-gradient(337deg, rgba(255,255,255,0.01) 43%, rgba(255,74,63,1) 100%);
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  display: block;
+  z-index: -1;
+  content: " ";
+}
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
