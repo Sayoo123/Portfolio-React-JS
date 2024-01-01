@@ -24,7 +24,7 @@ const Hero = () => {
             
           </p>
         </div>
-        <div className='w-10/12 h-full relative sm-phone'>
+        <div className='h-full w-3/5 relative sm-phone3'>
         {/* <div className='absolute w-10 h-10 justify-center items-center' ></div> */}
         <AstroCanvas/>
         </div>
