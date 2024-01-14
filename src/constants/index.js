@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    youngman,
   } from "../assets";
   
   export const navLinks = [
@@ -60,6 +61,11 @@ import {
       icon: creator,
     },
   ];
+  const head=[
+    {
+      icon:youngman,
+    },
+  ]
   
   const technologies = [
     {
@@ -264,4 +270,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects,head };

@@ -12,10 +12,9 @@ const SectionWrapper = (Component, idName) =>
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
-        id="about"
+        id={idName}
       >
-
-        <Component />
+      <Component />
       </motion.section>
     );
   };

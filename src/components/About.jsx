@@ -40,7 +40,7 @@ const About = () => {
     <>
       <div className="grid grid-cols-2 gap-4">
      
-     <div className="p-6 border border-[#ffff] rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1">
+     <motion.div className="p-6 border border-[#ffff] rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1" variants={textVariant()}>
      <motion.div variants={textVariant()}>
       <p className={styles.sectionHeadText}>Hello, <br/> I'm Sayooj</p>
       <motion.p
@@ -55,7 +55,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
       </motion.div>
-     </div>
+     </motion.div>
      <div className="px-6 pb-1 gap-16 row-span-1 col-span-1">
      {services.slice(0,1).map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -71,11 +71,11 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
      </div>
-     <div className="p-6 rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1 bg-white">
+     <div className="p-6 rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1 bg-white items-center justify-center">
       <Player
-      src={"./rocket.json"}className="player" loop autoplay/>
+      src={"./rocket.json"}className="player" loop autoplay style={{height:'300px',width:'300px'}}></Player>
      </div>
-     <div className="px-6 rounded-[12px]  gap-16 row-span-1 col-span-1">
+     <div className="px-6 rounded-[12px]  gap-16 row-span-1 col-span-1 ">
      {services.slice(3,4).map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
