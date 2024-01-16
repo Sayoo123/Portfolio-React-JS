@@ -269,5 +269,22 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+  export const Socials = [
+    {
+      name: "Instagram",
+      src: "./instagram.svg",
+      link:'https://www.instagram.com/sayo_ojj?igsh=MTJocWlydXdqM3F3NA=='
+    },
+    {
+      name: "Github",
+      src: "./gitwhite.png",
+      link:'https://github.com/Sayoo123'
+    },
+    {
+      name: "Facebook",
+      src: "./facebook.svg",
+      link:'https://www.facebook.com/sayoojsunilsayooj?mibextid=ZbWKwL'
+    },
+  ];
   
   export { services, technologies, experiences, testimonials, projects,head };

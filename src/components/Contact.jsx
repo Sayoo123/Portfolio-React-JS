@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { Socials } from "../constants";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -130,6 +130,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+    
   );
 };
 

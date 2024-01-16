@@ -7,9 +7,9 @@ import { fadeIn, textVariant,zoomIn } from "../utils/motion";
 import {styles} from '../styles'
 import { youngman,coin,padlock,phone,man } from '../assets';
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+
 const Works = () => {
-  const navigate = useNavigate();
+ 
   const slides = [
     {
      heading:'STUACADEMICS',
