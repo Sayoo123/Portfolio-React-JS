@@ -40,9 +40,9 @@ const About = () => {
     <>
       <div className="grid grid-cols-2 gap-4 sm-phone4">
      
-     <motion.div className="p-6 border border-[#ffff] rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1" variants={textVariant()}>
+     <motion.div className="p-6 border border-[#9333ea] rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1" variants={textVariant()}>
      <motion.div variants={textVariant()}>
-      <p className={styles.sectionHeadText}>Hello, <br/> I'm Sayooj</p>
+      <p className={styles.sectionHeadText}>Hello, <br/> I'm Say<span className="text-purple-600">ooj</span></p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'

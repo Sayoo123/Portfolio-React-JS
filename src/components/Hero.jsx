@@ -24,10 +24,10 @@ const Hero = () => {
 
         <div className='w-full mt-24 sm-phone2'>
           <h1 className={`${styles.heroSubText} text-white`}>
-            I'm a
+           Hi, I'm a
           </h1>
           <p className={`${styles.heroHeadText} mt-2 text-white-100`}>
-          <span className='text-[#ff4a3f]'>DEV</span>ELOPER<br className='sm:block hidden' />
+          <span className='text-purple-600'>DEV</span>ELOPER<br className='sm:block hidden' />
           </p>
           <button className="Btn mt-4" onClick={()=>window.location.href='https://www.overleaf.com/read/kymgdhvzfqyg#a6ccd7'}>
             <svg className="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>

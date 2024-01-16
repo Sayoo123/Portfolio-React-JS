@@ -154,6 +154,13 @@
   .sm-phone6{
     top:-42%;
   }
+  .sm-phone7{
+    margin-top: 0;
+  }
+  .sm-phone8{
+    line-height: 19px;
+    font-size:11px;
+  }
 }
 
 .black-gradient {
@@ -262,8 +269,8 @@ background: linear-gradient(337deg, rgba(162,205,188,1) 0%, rgba(255,255,255,0) 
 .lightup::before{
   position: absolute;
   /* transition: transform 1s ease; */
-  background: rgb(255,74,63);
-  background: linear-gradient(337deg, rgba(255,74,63,0.6139705882352942) 0%, rgba(255,255,255,0) 100%);
+  background: rgb(147,51,234);
+background: linear-gradient(337deg, rgba(147,51,234,1) 0%, rgba(255,255,255,0) 100%);
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
   display: block;
