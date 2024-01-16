@@ -38,21 +38,22 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 sm-phone4">
      
      <motion.div className="p-6 border border-[#ffff] rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1" variants={textVariant()}>
      <motion.div variants={textVariant()}>
       <p className={styles.sectionHeadText}>Hello, <br/> I'm Sayooj</p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         style={{color:"white"}}
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a skilled software developer with experience in Java and
+        JavaScript, and expertise in frameworks like React, Django, and
+        Three.js. Whether you're looking to collaborate on exciting projects, 
+        seeking a dedicated developer 
+        I'm here! Explore my portfolio, dive into my projects,
+         and let's embark on a journey of digital excellence together.
       </motion.p>
       </motion.div>
      </motion.div>
@@ -71,7 +72,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
      </div>
-     <div className="p-6 rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1 bg-white items-center justify-center">
+     <div className="p-6 rounded-[12px] flex flex-col gap-1 row-span-2 col-span-1 border border-[#ffff] items-center justify-center">
       <Player
       src={"./rocket.json"}className="player" loop autoplay style={{height:'300px',width:'300px'}}></Player>
      </div>
